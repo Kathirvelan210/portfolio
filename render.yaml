@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: personal-portfolio
+    env: docker
+    dockerfilePath: Dockerfile
+    branch: main
+    plan: free
+    healthCheckPath: /actuator/health
+    autoDeploy: true
